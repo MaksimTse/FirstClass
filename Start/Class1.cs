@@ -16,25 +16,25 @@ namespace Start
             int secretNumber = random.Next(1, 11);
             int tries = 5;
 
-            Console.WriteLine("The computer guessed a number from 1 to 10. You have {0} attempts to guess it.", tries);
+            Console.WriteLine("Arvuti arvas ära arvu vahemikus 1 kuni 10. Teil on {0} katset seda ära arvata.", tries);
 
             for (int i = 0; i < tries; i++)
             {
-                Console.Write("Try number {0}: Enter the number: ", i + 1);
+                Console.Write("Proovige numbrit {0}: sisestage number: ", i + 1);
                 int guess = int.Parse(Console.ReadLine());
 
                 if (guess == secretNumber)
                 {
-                    Console.WriteLine("you guessed the number {0}!", secretNumber);
+                    Console.WriteLine("arvasid numbri ära {0}!", secretNumber);
                     break;
                 }
                 else
                 {
-                    Console.WriteLine("You didn't guess the number {0}.", guess);
+                    Console.WriteLine("Sa ei arvanud numbrit ära {0}.", guess);
                 }
             }
 
-            Console.WriteLine("Game over. The computer guessed the number {0}.", secretNumber);
+            Console.WriteLine("Mäng läbi. Arvuti arvas numbri ära {0}.", secretNumber);
 
             Console.ReadLine();
 
@@ -48,7 +48,7 @@ namespace Start
             //    numbers[i] = n + i;
             //}
 
-            //Console.WriteLine("nubmers {0} to {1}:", n, m);
+            //Console.WriteLine("numbrit {0} kuni {1}:", n, m);
 
             //foreach (int number in numbers)
             //{
@@ -60,7 +60,7 @@ namespace Start
 
             //int[] arvud = new int[10];
 
-            //Console.WriteLine("Enter 5 numbers:");
+            //Console.WriteLine("Sisestage 5 numbrit:");
 
             //for (int i = 0; i < arvud.Length; i++)
             //{
@@ -79,9 +79,9 @@ namespace Start
 
             //double average = (double)sum / arvud.Length;
 
-            //Console.WriteLine("Sum: {0}", sum);
-            //Console.WriteLine("Average: {0}", average);
-            //Console.WriteLine("Product: {0}", product);
+            //Console.WriteLine("Summa: {0}", sum);
+            //Console.WriteLine("Keskmine: {0}", average);
+            //Console.WriteLine("Tulemus: {0}", product);
 
             //Console.ReadLine();
             //string userInput = "";
