@@ -1,3 +1,4 @@
+using Pillow;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -11,35 +12,51 @@ namespace Start
     {
         public static void Main(string[] args)
         {
-            Random random = new Random();
+            //string nimi = "Python";
+            //Alamprogramm.Tere(nimi);
+            //double arithm = Alamprogramm.Arith(2);
+            //Console.WriteLine(arithm);
+            //Console.WriteLine(Alamprogramm.Stars(20));
+            Alamprogramm.NStars();
 
-            int secretNumber = random.Next(1, 11);
-            int tries = 5;
+            //Random random = new Random();
 
-            Console.WriteLine("Arvuti arvas ära arvu vahemikus 1 kuni 10. Teil on {0} katset seda ära arvata.", tries);
+            //int secretNumber = random.Next(1, 11);
+            //int tries = 5;
 
-            for (int i = 0; i < tries; i++)
-            {
-                Console.Write("Proovige numbrit {0}: sisestage number: ", i + 1);
-                int guess = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Arvuti arvas ära arvu vahemikus 1 kuni 10. Teil on {0} katset seda ära arvata.", tries);
 
-                if (guess == secretNumber)
-                {
-                    Console.WriteLine("arvasid numbri ära {0}!", secretNumber);
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Sa ei arvanud numbrit ära {0}.", guess);
-                }
-            }
+            //for (int i = 0; i < tries; i++)
+            //{
+            //    Console.Write("Proovige numbrit {0}: sisestage number: ", i + 1);
+            //    int guess = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Mäng läbi. Arvuti arvas numbri ära {0}.", secretNumber);
+            //    if (guess == secretNumber)
+            //    {
+            //        Console.WriteLine("arvasid numbri ära {0}!", secretNumber);
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sa ei arvanud numbrit ära {0}.", guess);
+            //    }
+            //}
 
-            Console.ReadLine();
+            //Console.WriteLine("Mäng läbi. Arvuti arvas numbri ära {0}.", secretNumber);
 
-            //int n = random.Next(-5, 11);
+            //Console.ReadLine();
+
+            //int n = random.Next(-100, 100);
             //int m = random.Next(n, 21);
+            //if (n < 0)
+            //{
+            //    n = Math.Abs(n);
+            //}
+
+            //if (m < 0)
+            //{
+            //    m = Math.Abs(m);
+            //}
 
             //int[] numbers = new int[m - n + 1];
 
@@ -93,9 +110,35 @@ namespace Start
             //}
 
             //Console.WriteLine("Aitäh, et sa ostanud elevanti!");
-
             //Console.ReadLine();
 
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    for (int j = 1; j <= 10; j++)
+            //    {
+            //        Console.Write("{0,4}", i * j);
+            //    }
+            //    Console.WriteLine("\n");
+            //}
+
+            //Console.WriteLine("Sisestage 4 numbrit:");
+            //int num1 = int.Parse(Console.ReadLine());
+            //int num2 = int.Parse(Console.ReadLine());
+            //int num3 = int.Parse(Console.ReadLine());
+            //int num4 = int.Parse(Console.ReadLine());
+
+            //int largo = Math.Max(Math.Max(Math.Max(num1, num2), num3), num4);
+
+            //if (largo >= 1000 && largo <= 9999)
+            //{
+            //    Console.WriteLine($"suurim 4-kohaline arv on: {largo}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Neljakohalisi numbreid pole.");
+            //}
+
+            //Console.ReadLine();
 
         }
 
